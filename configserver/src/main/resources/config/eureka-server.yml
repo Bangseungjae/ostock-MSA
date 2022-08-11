@@ -1,0 +1,12 @@
+server:
+  port: 8070
+eureka:
+  instance:
+    hostname: eurekaserver
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 5 # 서버가 요청받기 전 초기 대기 시간을 설정한다.

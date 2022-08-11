@@ -1,0 +1,8 @@
+#logging:
+#  level:
+#    org.spring.framework.web: WARN
+#    com.optimagrowth: DEBUG
+spring:
+  main:
+    allow-circular-references: true
+    allow-bean-definition-overriding: true
